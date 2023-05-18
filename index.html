@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+
+    :root {
+    font-size: 20px;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:rgb(18, 40, 40);
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    button {
+      padding: 1.5rem 3rem;
+      font-size: 1.8rem;
+    }
+
+    #mensaje {
+      display: none;
+      margin-top: 2rem;
+      font-size: 2.4rem;
+      font-weight: bold;
+      text-align: center;
+      color: rgb(255, 0, 0);
+    }
+  </style>
+</head>
+<body>
+  <button onclick="mostrarMensaje()" id="btn">¡Haz clic aquí!</button>
+  <p id="mensaje">PERDÍ</p>
+</body>
+</html>
+
+<script>
+function mostrarMensaje() {
+      var mensaje = document.getElementById("mensaje");
+      var btn = document.getElementById("btn");
+      mensaje.style.display = "block";
+      btn.style.display = "none";
+    }
+</script>
